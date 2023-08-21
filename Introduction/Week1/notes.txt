@@ -1,0 +1,88 @@
+A Web server:
+1) Handles Website storage & administration
+2) Handles web requests from clients
+
+Webpage vs Website
+Webpage - Document that displays images, text, videos & other content
+Website - A collection of webpages that link together
+
+Web hosting 
+Service provided by hosting companies to place webpage files
+1) Shared Hosting
+- Pay for a single shared web server with other renters
+2) Virtual Private Hosting
+- Pay for a virtual private server, renters share hardware but do not share
+the same server. All servers are virtual machines sharing the same hardware
+3) Dedicated Hosting
+- Pay for a dedicated physical server
+4) Cloud Hosting
+- Pay for a cloud environment. Cloud environment spans across multiple 
+physical & virtual servers. If a server fails, the webpage will run on a 
+different server and stay online
+
+Internet Protocols for Packets
+1) Transmission Control Protocol (TCP)
+- Protocol used to send packets that must arrive in order such as text or image
+files
+2) User Datagram Protocol (UDP)
+- Protocol used to send packets that can tolerate data loss such as voice calls 
+or video streaming
+
+
+
+
+
+
+Sorting Algorithms sorts an array of elements
+
+Types of Algorithms for sorting:
+1) Selection Sort - sorting by finding smallest and place it accordingly
+2) Bubble Sort  - sorting by comparing 2 elements and swap places, repeat until sorted 
+3) Merge Sort - sorting 2 halves and compare the smallest element of each halve
+
+Selection Sort:
+Loops through the entire array, look for the smallest element and swap places
+with the first element of the unsorted part 
+
+Bubble Sort:
+Loops through the array constantly checking between 2 elements and swap places if
+the elements are in the wrong order, repeat this process until the array is sorted
+(generally moves high values to the right and low values to the left)
+
+Merge Sort:
+Sort 2 halves of the array, compare the smallest element of each halve, then
+get the smallest element and put it in a new array 
+
+
+-------------------------------- Running Time ---------------------------------
+All algorithms have a running time which represents roughly how fast / slow the algorithm is
+(represented by O)
+
+Slowest to Fastest running times:  
+O(n ^ 2) > O(n log n) > O(n) > O(log n) > O(1)          
+
+Linear search has a running time of O(n)
+Binary search has a running time of O(log n)
+
+Linear sort has a running time of O(n ^ 2) 
+Bubble sort has a running time of O(n ^ 2)           
+Bubble sort has a running time of O(n log n)           
+ 
+-------------------------------- Data Structure -------------------------------
+Data structures are a specialized way of storing and processing data 
+Arrays are a type of data structure that allows us to store data back-to-back
+Modern programming languages allows us to invent our own data structures
+
+Implementing a new data structure:
+    typedef struct
+    {
+        // variables
+    }
+    structure_name
+
+---------------------------------- Recursion ----------------------------------
+A programming technique that makes a function call itself as part of its execution
+
+Basic reuirements for a recursive function:
+Base case           (will terminate the recusive process when triggered)
+Recursive case      (function calls itself that solves a smaller range of the problem)
