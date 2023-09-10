@@ -10,7 +10,7 @@ Webpage - Document that displays images, text, videos & other content
 Website - A collection of webpages that link together
 
 ## Web hosting 
-Service provided by hosting companies to place webpage files
+Service provided by hosting companies to place webpage files.
 1. Shared Hosting
     - Pay for a single shared web server with other renters
 2. Virtual Private Hosting
@@ -18,14 +18,11 @@ Service provided by hosting companies to place webpage files
 3. Dedicated Hosting
     - Pay for a dedicated physical server
 4. Cloud Hosting
-    - Pay for a cloud environment. Cloud environment spans across multiple 
-physical & virtual servers. If a server fails, the webpage will run on a 
-different server and stay online
+    - Pay for a cloud environment. Cloud environment spans across multiple physical & virtual servers. If a server fails, the webpage will run on a different server and stay online
 
 ## Internet Protocols
 1. Transmission Control Protocol (TCP): For Packet Transfer
-    - Protocol used to send packets that must arrive in order such as text or image
-files
+    - Protocol used to send packets that must arrive in order such as text or image files
 2. User Datagram Protocol (UDP): For Packet Transfer
     - Protocol used to send packets that can tolerate data loss such as voice calls or video streaming
 3. Hypertext Transfer Protocol (HTTP): For Webserver Communication
@@ -38,9 +35,8 @@ Framework - A coding structure for developers to build with. A framework may use
 Library - Reusable pieces of code for specific functionality (E.g. Email validation library)
 
 ## Application Programming Function (API)
-A service, application, or interface offering advanced features with a set of functions and procedures. They are the communication bridge between different systems 
+A service, application, or interface offering advanced features with a set of functions and procedures. They are the communication bridge between different systems.
 
-API's are
 1. Browser API 
     - Built-in API that extends from the browser that extend browser features and simplify complex functions (E.g. DOM API, Geolocation API, Canvas API)
 2. REST API 
