@@ -3,7 +3,7 @@
 ## HTML
 Markup language made up of tags and elements used to define the structure of a webpage.
 
-## Document Object Model (DOM):
+## Document Object Model (DOM)
 To represent the HTML document in Javascript, the browser builds a tree structure of objects called the
 Document Object Model (DOM) to allow Javascript to access HTML elements. Each element in a HTML file is represented by an object in which the tree structure follows the nesting of elements defined in the HTML file.
 
@@ -45,7 +45,7 @@ h1 {
 #navigation > h1 {
 }
 ```
-Note: Descendant Selectors can go through multiple childs (navigation > div > h1), while Child Selector only selects elements that are direct children of a selector (navigation > h1)
+**Note**: Descendant Selectors can go through multiple childs (navigation > div > h1), while Child Selector only selects elements that are direct children of a selector (navigation > h1)
 
 ## CSS Precedence and Specificity
 If an element is styled by multiple CSS selectors, the browser chooses the most precise & specific selector for a HTML element.
@@ -87,7 +87,7 @@ In CSS, all HTML elements are organised by 2 categories **Block** and **Inline**
 
 <br>
 
-Note: HTML element's organisation method can be changed:
+**Note**: HTML element's organisation method can be changed:
 ```
 p {
     display: block / inline;
@@ -104,7 +104,7 @@ p {
 ```
 
 ### Element Alignment 
-HTML elements can be aligned by setting a width on a child element using the **width** property and push its margin to fill out the remaining available space using **margin** property by **auto** for align center or **float** property by either **left**, **right** for align left / right.
+HTML elements can be aligned by setting a width on a child element using the **width** property and push its margin to fill out the remaining available space, while using **margin: auto** for align center or **float: left/right** for aligning left / right.
 ```
 <div class=parent>
     <div class=child>

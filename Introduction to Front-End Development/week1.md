@@ -30,9 +30,9 @@ Service provided by hosting companies to place webpage files.
     - Methods Used: GET (Retrieve), POST (Send), PUT (Update), DELETE (Remove)
 
 ## Frameworks vs Libraries
-Framework - A coding structure for developers to build with. A framework may use multiple libraries in it. (E.g. Backend framework for sending HTTP requests)
-
 Library - Reusable pieces of code for specific functionality (E.g. Email validation library)
+
+Framework - A coding structure for developers to build with. A framework may use multiple libraries in it. (E.g. Backend framework for sending HTTP requests)
 
 ## Application Programming Function (API)
 A service, application, or interface offering advanced features with a set of functions and procedures. They are the communication bridge between different systems.
