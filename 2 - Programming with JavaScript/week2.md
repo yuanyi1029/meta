@@ -78,10 +78,10 @@ Math.LN2
 
 Rounding Methods:
 ```
-Math.ceil()  (rounds up to closest integer)
-Math.floor() (rounds down to closest integer)
-Math.round() (rounds up to closest integer for decimals .5 or above, otherwise rounds down to closest integer)
-Math.trunc() (removes decimal values completely)
+Math.ceil()     // rounds up to closest integer
+Math.floor()    // rounds down to closest integer
+Math.round()    // rounds up to closest integer for decimals .5 or above, otherwise rounds down to closest integer
+Math.trunc()    // removes decimal values completely
 ```
 
 Arithmetic and Calculus Methods:
@@ -100,7 +100,7 @@ Math.tan()
 
 Random Methods:
 ```
-Math.random() (Between 0 - 0.99)
+Math.random()   // between 0 - 0.99
 ```
 
 ## Strings

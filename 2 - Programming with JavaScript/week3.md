@@ -124,7 +124,7 @@ class Car {
     }
 }
 
-class Honda {
+class Honda extends Car {
     constructor (arg1, arg2, arg3) {
         super(arg1, arg2);
         this.arg3 = arg3;
@@ -180,7 +180,7 @@ Common data structures in Javascript:
 - Sets
 
 ## Spread Operator
-The spread operator (...) can be used to spread array items and join objects together.
+The spread operator "..." can be used to spread array items and join objects together.
 
 Spreading array items:
 ```
@@ -257,7 +257,7 @@ const jsonObj = JSON.parse(jsonStr)
 
 Converting a Javascript object into a JSON string:
 ```
-const jsonObj = '{"property1": "one"}'
+const jsonObj = {property1: "one"}
 const jsonStr = JSON.stringify(jsonObj)
 ```
 
