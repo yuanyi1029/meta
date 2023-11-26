@@ -78,14 +78,14 @@ Example Scenario:
     - In Lazy Loading, the web server sends minimal HTML, CSS and Javascript code upon request, where additional resources are downloaded later when required
 
 ## React
-A Javascript library for building single page applications or mobile applications (React Native), where it uses small pieces of user interface blocks called components to build a web application.
+React is a Javascript library used for building single page applications or mobile applications (React Native), where it uses small pieces of user interface blocks called components to build a web application.
 
 Benefits of using React components:
 - Isolated development and testing of components allows for easier web application development
 - Components can be re-used easily 
 
 ## React Virtual DOM
-React keeps tracks of its own virtual DOM in the memory, which is a representation of the browser DOM. React uses the virtual DOM to update the browser DOM when necessary
+React keeps tracks of its own virtual DOM in the memory, which is a representation of the browser DOM. React then uses the virtual DOM to update the browser DOM when necessary
 
 Reconciliation Process:
 1. Update the virtual DOM
