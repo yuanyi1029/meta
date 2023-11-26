@@ -1,0 +1,135 @@
+/* Document CSS */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Header CSS */
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Bar CSS */
+nav {
+    background-color: black;
+    height: 3rem;
+    border-radius: 25px;
+}
+
+nav > ul {
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Main CSS */
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#heading1 {
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+#heading1 article h1 {
+    color: #043704;
+}
+
+#heading1 article p {
+    color: #043704;
+    line-height: 1.5rem;
+    width: 65%;
+}
+
+#heading2, #heading3, #heading4 {
+    background-color: lightpink;
+    border-radius: 25px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#heading2 img, #heading3 img, #heading4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heading2 h2, #heading3 h2, #heading4 h2, #heading2 p, #heading3 p, #heading4 p {
+    text-align: center;
+}
+
+/* Footer CSS */
+footer {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer div {
+    flex: 1;
+}
+
+#leftfooter {
+    display: block;
+    margin-right: auto;
+}
+
+#rightfooter {
+    text-align: right;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    #heading1 article p {
+        width: 100%;
+    }
+
+    article {
+        flex-basis: 100%;
+    }
+}
