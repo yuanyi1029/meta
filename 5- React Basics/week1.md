@@ -115,7 +115,7 @@ Example React props usage:
 root.render(<App title="Hello World"/>)
 ```
 ```
-export function App(props) {
+function App(props) {
     return (
         <h1>{ props.title }</h1>
     )
@@ -124,6 +124,36 @@ export function App(props) {
 
 ## JSX
 JSX is a type of syntax extension to Javascript that allows writing HTML elements inside of Javascript.
+
+Using Javascript expressions within HTML code with JSX:
+```
+function Header() {
+    return (
+        <h1>{ 1 + 1 }</h1>
+        <h1>{ "Hello" + "World" }</h1>
+        <h1>{ getName() }</h1>
+        <h1>{ (10 + 10 === 20) ? "yes" : "no" }</h1>
+    )
+}
+```
+
+Embedding images with JSX:
+```
+import logo from "./logo.png"
+
+function Header() {
+    return (
+        <img src={ logo }>
+    )
+}
+```
+
+Passing components as props with JSX:
+```
+root.render(
+    <App children={ <Header message="Hello world"/> }/>
+);
+```
 
 ## React Internal Styling
 Instead of using an external CSS file to style components, an internal styling method can be used to style components by carrying over CSS definitions into the component file.
@@ -139,9 +169,9 @@ container {
 ```
 function Header() {
     const container {
-        backgroundColor: "red";
-        width: "calc(30% - 10px)";
-        marginLeft: "10px"; 
+        backgroundColor: "red",
+        width: "calc(30% - 10px)",
+        marginLeft: "10px",
     }
 
     return (
@@ -153,4 +183,6 @@ function Header() {
 ```
 **Notes**: 
 1. Hyphens in the properties of the CSS file are replaced with camelCase in the component file.
+2. Semi-colons in each style declaration of the CSS file are replaced with commas in the component file.
 2. Parenthesis are added to each value in the component file.
+

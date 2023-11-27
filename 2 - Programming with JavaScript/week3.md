@@ -241,9 +241,11 @@ Javascript event handling:
 // Handling events by listening for an event, and calling a function
 const target = document.querySelector('body')
 target.addEventListener('click', () => console.log('clicked on body'))
+target.addEventListener('click', handleClick)
 
 // Handling events by adding HTML event attributes
-<h1 onClick = "console.log('clicked on h1')">Hello World!</h1>
+<h1 onclick = "console.log('clicked on h1')">Hello World!</h1>
+<h1 onclick = "handleClick()">Hello World!</h1>
 ```
 
 ## JSON
