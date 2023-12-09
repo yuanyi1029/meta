@@ -32,13 +32,10 @@ const LandingSection = () => {
     validationSchema: Yup.object({ 
       firstName: Yup.string().required("Required"), 
       email: Yup.string().email("Invalid email address").required("Required"), 
-      comment: Yup.string() 
-        .min(25, "Must be at least 25 characters") 
-        .required("Required"), 
+      type: Yup.string(),
+      comment: Yup.string() .min(25, "Must be at least 25 characters").required("Required"), 
     }), 
   });
-
-  // e) **Show an alert when the form is submitted successfully**.
 
   useEffect(() => { 
     if (response) { 
@@ -48,8 +45,6 @@ const LandingSection = () => {
       } 
     } 
   }, [response]);
-
-  
 
   return (
     <FullScreenSection
@@ -69,13 +64,13 @@ const LandingSection = () => {
               <FormControl isInvalid = { !!formik.errors.firstName && formik.touched.firstName }>
                 <FormLabel htmlFor="firstName">Name</FormLabel>
                 <Input id="firstName" name="firstName" { ...formik.getFieldProps('firstName') }/>
-                <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
+                <FormErrorMessage>{ formik.errors.firstName }</FormErrorMessage>
               </FormControl>
 
               <FormControl isInvalid = { !!formik.errors.email && formik.touched.email }>
                 <FormLabel htmlFor="email">Email Address</FormLabel>
                 <Input id="email" name="email" type="email" { ...formik.getFieldProps('email') }/>
-                <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+                <FormErrorMessage>{ formik.errors.email }</FormErrorMessage>
               </FormControl>
 
               <FormControl>
@@ -90,7 +85,7 @@ const LandingSection = () => {
               <FormControl isInvalid = { !!formik.errors.comment && formik.touched.comment }>
                 <FormLabel htmlFor="comment">Your message</FormLabel>
                 <Textarea id="comment" name="comment" height={250} { ...formik.getFieldProps("comment") }/>
-                <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
+                <FormErrorMessage>{ formik.errors.comment }</FormErrorMessage>
               </FormControl>
 
               <Button type="submit" colorScheme="purple" width="full">Submit</Button>
