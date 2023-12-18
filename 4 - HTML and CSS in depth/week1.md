@@ -11,13 +11,15 @@ Basic HTML page structure with semantic elements:
   <head>
   </head>
   <body>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
       <header>
-        <nav>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </nav>
+        <img src="logo.png" alt="Hero Section">
       </header>
 
       <main>

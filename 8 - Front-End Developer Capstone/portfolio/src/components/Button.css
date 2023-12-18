@@ -1,0 +1,20 @@
+.button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    color: #495E57;
+    background-color: #F4CE14;
+    border-radius: 1rem;
+    border: 0.1875rem solid #F4CE14;
+    text-decoration: none;
+}
+
+.button:hover, 
+.button:focus {
+    color: black;
+    border-color: black;
+}
+  

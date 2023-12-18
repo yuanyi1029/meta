@@ -1,0 +1,43 @@
+.footer {
+    background-color: #495E57;
+    color: white;
+}
+
+.footer > .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    color: #F4CE14;
+}
+
+.footer-logo {
+    grid-column: 1;
+    width: 6rem;
+    justify-self: start; 
+    align-self: center;     
+}
+
+.footer-nav {
+    grid-column: auto;
+}
+
+.footer-nav h4 {
+    padding-bottom: 1rem;
+}
+
+

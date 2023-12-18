@@ -32,13 +32,13 @@ function App() {
     return (
         <div>
             <nav>
-                <Link to="/">Homepage</link>
-                <Link to="/about">About</link>
+                <Link to="/">Homepage</Link>
+                <Link to="/about">About</Link>
             </nav>
             <Routes>
                 <Route path="/" element={ <Homepage />} />
                 <Route path="/about" element={ <About />} />
-            <Routes>
+            </Routes>
         </div>
     )
 }

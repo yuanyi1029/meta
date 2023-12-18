@@ -143,7 +143,7 @@ import logo from "./logo.png"
 
 function Header() {
     return (
-        <img src={ logo }>
+        <img src={ logo } />
     )
 }
 ```

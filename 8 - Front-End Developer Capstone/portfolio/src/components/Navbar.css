@@ -1,0 +1,31 @@
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-height: 6.25rem;
+}
+
+.navbar > img {
+    grid-column: 1;
+    justify-self: start;    /* Horizontal Alignment */ 
+    align-self: center;     /* Vertical Alignment */ 
+    max-width: 15.625rem;
+}
+
+.navbar-ul {
+    grid-column: 3;
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    list-style: none;
+}
+
+.navbar-ul a {
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #495E57;
+}
+
+.navbar-ul a:hover {
+    color: #F4CE14;
+}
